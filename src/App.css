@@ -1,6 +1,20 @@
-.App {
-  width: 100vw;
-  height: 90vh;
+.app {
+  width: 98vw;
+  height: 100vh;
+  overflow: scroll; /* Hide the scrollbar */
+}
+
+/* Customize scrollbar for webkit-based browsers */
+.app::-webkit-scrollbar {
+  width: 0; /* Remove default scrollbar width */
+}
+
+.app::-webkit-scrollbar-track {
+  background: transparent; /* Set track color */
+}
+
+.app::-webkit-scrollbar-thumb {
+  background: transparent; /* Set thumb color */
 }
 
 .video-background {
