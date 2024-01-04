@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Typography,
-  Box,
-  TextField,
-  Button,
-  Grid,
-} from "@mui/material";
+import { Typography, Box, TextField, Button, Grid } from "@mui/material";
 
 const Contact = () => {
   const textFieldStyle = {

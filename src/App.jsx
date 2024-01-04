@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { animateScroll as scroll, Element } from "react-scroll";
+import { animateScroll as scroll, Element, Link } from "react-scroll";
 import ResponsiveAppBar from "./components/navbar";
 import Moon from "./components/Moon";
 import Mario from "./components/mario";
@@ -37,44 +37,41 @@ function App() {
   return (
     <div className="app">
       <ResponsiveAppBar />
-      <br />
-      <br />
-      <br />
-      {/* <Element name="homeSection">
-        <Home />
-      </Element> */}
+
       <Element name="FirstSection">
         <FirstSection />
       </Element>
-      <div className="home-container">
-        <h1>Welcome to the 3D Metaverse Gaming Website!</h1>
-      </div>
+
+      {/* Moon Section */}
       <Element name="moonSection">
         <Moon />
       </Element>
-      <br />
+
+      {/* Slider3d Section */}
       <Element name="Slider3dSection">
         <Slider3d />
       </Element>
-      <br />
-      <br />
+
+      {/* Mario Section */}
       <Element name="marioSection">
+        <Mario />
         <MoonSpace />
       </Element>
-      <Mario />
 
+      {/* About Section */}
       <Element name="aboutSection">
         <About />
       </Element>
 
+      {/* Contact Section */}
       <Element name="contactSection">
         <Contact />
+        {showScrollTop && (
+          <button className="scroll-top-btn" onClick={scrollToTop}>
+            Go to Top
+          </button>
+        )}
       </Element>
-      {showScrollTop && (
-        <button className="scroll-top-btn" onClick={scrollToTop}>
-          Go to Top
-        </button>
-      )}
     </div>
   );
 }

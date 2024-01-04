@@ -4,7 +4,7 @@ import { Typography, Box, Grid } from "@mui/material";
 const About = () => {
   const companyName = "Blockchain & Token";
   return (
-    <Box sx={{ padding: "20px", marginTop: "20px", height: "100vh" }}>
+    <Box sx={{ marginTop: "20px" }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography
