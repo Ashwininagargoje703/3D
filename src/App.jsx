@@ -40,9 +40,18 @@ function App() {
       <Element name="moonSection">
         <Moon />
       </Element>
+      <Element name="marioSection">
+        <Mario />
+      </Element>
+      <br />
+
       <Element name="Slider3dSection">
         <Slider3d />
       </Element>
+      <br />
+      <br />
+      <br />
+
       <MoonSpace />
       {showScrollTop && (
         <button className="scroll-top-btn" onClick={scrollToTop}>
