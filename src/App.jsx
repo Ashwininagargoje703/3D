@@ -51,6 +51,9 @@ function App() {
       <Element name="Slider3dSection">
         <Slider3d />
       </Element>
+      <br />
+      <br />
+      <br />
 
       {/* Mario Section */}
       <Element name="marioSection">
@@ -58,7 +61,6 @@ function App() {
         <MoonSpace />
       </Element>
 
-      {/* About Section */}
       <Element name="aboutSection">
         <About />
       </Element>
