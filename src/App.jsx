@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll, Element } from "react-scroll";
 import ResponsiveAppBar from "./components/navbar";
-import Home from "./components/Home";
 import Moon from "./components/Moon";
 import Mario from "./components/mario";
 import MoonSpace from "./components/moonspace";
 import Slider3d from "./components/Slider";
+import "./App.css";
+import FirstSection from "./components/First/firstSection";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -32,27 +35,41 @@ function App() {
   };
 
   return (
-    <div className="canvas-container">
+    <div className="App">
       <ResponsiveAppBar />
-      <Element name="homeSection">
+      <br />
+      <br />
+      <br />
+      {/* <Element name="homeSection">
         <Home />
+      </Element> */}
+      <Element name="FirstSection">
+        <FirstSection />
       </Element>
+      <div className="home-container">
+        <h1>Welcome to the 3D Metaverse Gaming Website!</h1>
+      </div>
       <Element name="moonSection">
         <Moon />
       </Element>
-      <Element name="marioSection">
-        <Mario />
-      </Element>
       <br />
-
       <Element name="Slider3dSection">
         <Slider3d />
       </Element>
       <br />
       <br />
-      <br />
+      <Element name="marioSection">
+        <MoonSpace />
+      </Element>
+      <Mario />
 
-      <MoonSpace />
+      <Element name="aboutSection">
+        <About />
+      </Element>
+
+      <Element name="contactSection">
+        <Contact />
+      </Element>
       {showScrollTop && (
         <button className="scroll-top-btn" onClick={scrollToTop}>
           Go to Top

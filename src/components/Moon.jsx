@@ -8,7 +8,7 @@ function BackgroundSphere() {
   const sphereRef = useRef();
   const envMap = useLoader(
     THREE.TextureLoader,
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/hipp8_s.jpg"
+    "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71nqYKcqyCL.jpg"
   );
 
   return (
