@@ -12,13 +12,13 @@ const Contact = () => {
   const textFieldStyle = {
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: "red",
+        borderColor: "blue",
       },
       "&:hover fieldset": {
-        borderColor: "red",
+        borderColor: "blue",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "red",
+        borderColor: "blue",
       },
     },
   };
