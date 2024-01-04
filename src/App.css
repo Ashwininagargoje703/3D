@@ -1,0 +1,14 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #ffdca5;
+}
+
+.video-background {
+  object-fit: cover;
+}
