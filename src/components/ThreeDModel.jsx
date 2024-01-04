@@ -24,7 +24,7 @@ const ThreeDModel = () => {
   const modelRef = useRef();
   const canvasRef = useRef();
 
-  const { scene } = useGLTF("/src/assets/Sandbox.glb");
+  const { scene } = useGLTF("models/Sandbox.glb");
 
   return (
     <Canvas
