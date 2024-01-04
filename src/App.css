@@ -12,3 +12,16 @@
 .video-background {
   object-fit: cover;
 }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ddd; /* Change this to the desired background color */
+}
+
+.storyline-container2 {
+  margin-top: 20px;
+  text-align: center;
+}

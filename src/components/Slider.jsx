@@ -3,7 +3,7 @@ import Carousel from "react-spring-3d-carousel";
 import uuidv4 from "uuid";
 import { config } from "react-spring";
 
-export default class Slider extends Component {
+export default class Slider3d extends Component {
   state = {
     goToSlide: 0,
     offsetRadius: 2,

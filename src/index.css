@@ -129,3 +129,10 @@ h1 {
 .storyline h2 {
   margin-bottom: 10px;
 }
+
+.scroll-top-btn {
+  position: fixed; /* Fixed position to keep it in place */
+  bottom: 20px; /* Adjust bottom space */
+  right: 20px; /* Adjust right space */
+  z-index: 999; /* Set a high z-index to ensure it's above other elements */
+}

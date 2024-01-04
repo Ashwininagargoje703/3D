@@ -1,7 +1,23 @@
 import React, { useEffect, useRef } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import * as THREE from "three";
+
+function BackgroundSphere() {
+  const sphereRef = useRef();
+  const envMap = useLoader(
+    THREE.TextureLoader,
+    "https://t4.ftcdn.net/jpg/06/41/82/09/240_F_641820987_Z4HKb00CrMl6JmNs5Nc3Wl1shQvBXcGS.jpg"
+  );
+
+  return (
+    <mesh ref={sphereRef} scale={[500, 500, 500]}>
+      <sphereGeometry args={[1, 60, 60]} />
+      <meshBasicMaterial map={envMap} side={THREE.BackSide} />
+    </mesh>
+  );
+}
 
 function Mario() {
   const marioRef = useRef();
@@ -36,6 +52,7 @@ function Mario() {
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         {/* Mario model */}
+        <BackgroundSphere />
         <group ref={marioRef} position={[0, 0, 0]} />
 
         {/* Token */}
