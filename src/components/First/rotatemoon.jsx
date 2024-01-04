@@ -7,7 +7,7 @@ const RotateMoon = ({ position }) => {
   const [sphereX, setSphereX] = useState(position);
   const modelRef = useRef();
 
-  const gltf = useGLTF("/src/assets/moon/scene.gltf", undefined, (error) => {
+  const gltf = useGLTF("moon/scene.gltf", undefined, (error) => {
     console.error("Error loading GLTF:", error);
   });
 
